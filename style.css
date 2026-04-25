@@ -1,0 +1,156 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: rgb(135, 35, 35);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0d1e6a;
+}
+
+.contenedor-principal{
+  background-color: #1a1a1a; 
+  display: flex;
+  justify-content: flex-start; 
+  gap: 20px;
+  align-items: center; 
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.Menu{
+  margin-left:auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  color: rgb(247, 245, 245);              
+  font-family: sans-serif;
+}
+
+.titulo{
+  display: flex;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.logo{
+  width: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.video{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto ;
+  display: block;
+}
+
+.contenido, .contenido2, .contenido3 {
+  background-color:#faf6f6;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contenedor-columnas {
+    display: flex;           
+    justify-content: space-between; 
+    align-items: flex-start;  
+    gap: 40px;               
+    padding: 20px;
+    flex-direction: row; 
+}
+
+.contenedor-columnas article, 
+.contenedor-columnas aside {
+    flex: 1; 
+    min-width: 0;
+}
+
+.modelos {
+    list-style: none;
+    padding: 0;
+}
+
+.tipo{
+  display: inline-block;
+  padding: 12px 40px;
+  background-color: #0e2135;
+  color: #ffffff ;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Verdana, sans-serif;
+  width: 80px;       
+  text-align: center; 
+  margin-bottom: 10px;
+}
+
+
+.fiat-viejo, .fiatuno, .fiatpalio, .fiatsiena, .fiattoro, .fiatcronos {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid #1b1919;
+  display: block;
+  margin: 20px auto;
+}
+
+p{
+  color: #454547;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+h2, h3{ 
+    color: #06325d;
+    margin-bottom: 20px;
+}
+
+.pie-pagina{
+  background-color: #1a1a1a;
+  padding: 20px ;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+  text-align: center;
+}
+
+.letra-final{
+  color: white;
+  text-align: center;
+}
+
+/* --- SECCIÓN DE MEDIOS PARA MÓVIL --- */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .Menu {
+    margin-left: 0;
+    padding: 10px;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .contenedor-columnas {
+    flex-direction: column; /* Solo aquí se vuelven columna */
+    gap: 20px;
+  }
+
+  .contenedor-columnas article, 
+  .contenedor-columnas aside {
+    flex: none;
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+  }
+}
